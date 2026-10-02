@@ -504,6 +504,19 @@ const PROMISE =
 const MONEY = /[£$€]\s?\d|\b\d+\s?(?:gbp|pounds?)\b|\bper (?:hour|day|week|month) from\b/i;
 const CHECKOUT = /\b(pay online|checkout|add to (?:basket|cart)|buy now|shopping (?:basket|cart)|subscribe now|payment page)\b/i;
 
+/**
+ * Prescription-only medicines and medical claims.
+ *
+ * Regulation 284 of the Human Medicines Regulations 2012 prohibits advertising
+ * a prescription-only medicine to the public, which covers botulinum toxin and
+ * every brand name it is sold under. A beauty or aesthetics site is exactly
+ * where that slips in, so the names are blocked outright rather than reviewed.
+ * Outcome claims ("clinically proven", "cures") are blocked for the same
+ * reason: they are medical claims no beauty business can substantiate.
+ */
+const POM = /\b(botox|botulinum|dysport|azzalure|bocouture|vistabel|xeomin|prescription[- ]only|anti[- ]wrinkle injection)\b/i;
+const MEDICAL_CLAIM = /\b(clinically proven|medically proven|dermatologically proven|cures?|heals?|permanent results|pain[- ]free|medical[- ]grade)\b/i;
+
 /** Sections whose job is to restate facts or to disclaim: exempt from some rules. */
 const FACTUAL_KEYS = ['legal'];
 /** A sentence that denies a claim is legitimate ("no accreditation is claimed"). */
@@ -529,6 +542,12 @@ for (const [name, value] of Object.entries(content)) {
       err('scope', `${where}: checkout wording ("${s.match(CHECKOUT)[0]}") — there is no online payment`);
     }
     if (factual) return;
+    if (POM.test(s)) {
+      err('content', `${where}: prescription-only medicine named ("${s.match(POM)[0]}") — advertising one to the public breaches reg. 284 of the Human Medicines Regulations 2012`);
+    }
+    if (MEDICAL_CLAIM.test(s) && !DISCLAIMER.test(s)) {
+      err('content', `${where}: medical claim ("${s.match(MEDICAL_CLAIM)[0]}")`);
+    }
     if (CLAIMS.test(s) && !DISCLAIMER.test(s)) {
       err('content', `${where}: unverifiable claim ("${s.match(CLAIMS)[0]}") — a real credential belongs in site.ts`);
     }
@@ -725,6 +744,8 @@ for (const [page, { raw, html, jsonLd, ids, idList }] of pages) {
     if (/'/.test(t)) err(scope, `straight apostrophe (use the typographic apostrophe): "${excerpt}"`);
     if (MONEY.test(t)) err(scope, `currency amount ("${t.match(MONEY)[0]}"): "${excerpt}"`);
     if (CHECKOUT.test(t) && !DISCLAIMER.test(t)) err(scope, `checkout wording ("${t.match(CHECKOUT)[0]}"): "${excerpt}"`);
+    if (POM.test(t)) err(scope, `prescription-only medicine named ("${t.match(POM)[0]}") — see reg. 284, Human Medicines Regulations 2012: "${excerpt}"`);
+    if (MEDICAL_CLAIM.test(t) && !DISCLAIMER.test(t)) err(scope, `medical claim ("${t.match(MEDICAL_CLAIM)[0]}"): "${excerpt}"`);
     if (CLAIMS.test(t) && !DISCLAIMER.test(t)) err(scope, `unverifiable claim ("${t.match(CLAIMS)[0]}"): "${excerpt}"`);
     if (TRACK_RECORD.test(t)) err(scope, `unverifiable track record ("${t.match(TRACK_RECORD)[0]}"): "${excerpt}"`);
   }

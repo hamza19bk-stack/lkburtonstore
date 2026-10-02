@@ -1,7 +1,7 @@
-# LK Burton — lkburtonstore.shop
+# N.A Aesthetics — naaesthetics.shop
 
-Static brochure site for **LK BURTON LIMITED**, built with Astro and published on
-GitHub Pages at <https://lkburtonstore.shop>.
+Static brochure site for **N.A AESTHETICS LTD**, built with Astro and published on
+GitHub Pages at <https://naaesthetics.shop>.
 
 ## Registered company details
 
@@ -10,21 +10,21 @@ Every value below comes from the public register and was last checked on
 
 | | |
 |---|---|
-| Registered name | LK BURTON LIMITED |
-| Company number | 13460176 |
+| Registered name | N.A AESTHETICS LTD |
+| Company number | 13044738 |
 | Registered in | England and Wales |
-| Registered office | 84 Dover Road, Horninglow, Burton-On-Trent, England, DE13 0TB |
+| Registered office | Flat 13, Heaton House, Thurston Way, Borehamwood, England, WD6 1BF |
 | Company type | Private limited company |
-| Incorporated | 16 June 2021 |
+| Incorporated | 26 November 2020 |
 | Register status | Active |
-| Director | Chun Him Yeung |
-| Public record | https://find-and-update.company-information.service.gov.uk/company/13460176 |
+| Director | Natasha Akbar |
+| Public record | https://find-and-update.company-information.service.gov.uk/company/13044738 |
 
 ### Nature of business (SIC)
 
 | Code | Description |
 |---|---|
-| 98000 | Residents property management |
+| 96020 | Hairdressing and other beauty treatment |
 
 Section 82 of the Companies Act 2006 requires the registered name, company
 number, place of registration and registered office to appear on the website.

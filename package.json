@@ -1,5 +1,5 @@
 {
-  "name": "lkburtonstore-site",
+  "name": "naaesthetics-site",
   "type": "module",
   "version": "1.0.0",
   "private": true,
@@ -33,5 +33,5 @@
     "@fontsource/instrument-serif": "^5.3.0",
     "astro": "^5.6.1"
   },
-  "description": "LK Burton (LK BURTON LIMITED, company no. 13460176) — static site"
+  "description": "N.A Aesthetics (N.A AESTHETICS LTD, company no. 13044738) — static site"
 }

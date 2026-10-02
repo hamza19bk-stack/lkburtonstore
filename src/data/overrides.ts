@@ -1,163 +1,170 @@
 /**
- * LK Burton — lkburtonstore.shop
- * LK BURTON LIMITED, company no. 13460176, Burton upon Trent.
- * SIC: 98000 residents property management.
+ * N.A Aesthetics — lkburtonstore.shop
+ * N.A AESTHETICS LTD, company no. 13044738, Borehamwood.
+ * SIC: 96020 Hairdressing and other beauty treatment.
  *
- * TWO THINGS TO RAISE WITH THE CLIENT:
- *  1. The domain says "store" but the only activity on the register is
- *     residents property management. The site follows the register, because
- *     that is the verifiable fact.
- *  2. In England, a business carrying out property management work must belong
- *     to a government-approved redress scheme (The Property Ombudsman or the
- *     Property Redress Scheme) under the 2014 Order, and scheme membership has
- *     to be stated. No membership is claimed here, because none can be
- *     verified from here. Once the company confirms its scheme and membership
- *     number, put them in site.legal.regulator and they will appear on the
- *     legal notice automatically.
+ * THREE THINGS TO RAISE WITH THE CLIENT:
+ *  1. The domain is lkburtonstore.shop, which has nothing to do with the
+ *     company name. It works, but a visitor will notice.
+ *  2. This copy covers ONLY the activity on the register: hairdressing and
+ *     other beauty treatment. It deliberately names no injectable treatment.
+ *     Botulinum toxin is a prescription-only medicine, and reg. 284 of the
+ *     Human Medicines Regulations 2012 makes advertising one to the public
+ *     unlawful — so it cannot go on a website, however it is worded. If the
+ *     business offers prescriber-led treatments, that content has to be built
+ *     separately with the prescriber, and still cannot name the medicine.
+ *  3. No qualification, insurance or training provider is claimed anywhere,
+ *     because none of it can be verified from here. Send the real details and
+ *     they can go on the site.
  */
 
 export const overrides: Record<string, unknown> = {
   home: {
     seo: {
-      title: 'Residents property management in Burton upon Trent',
+      title: 'Hairdressing and beauty treatment in Borehamwood',
       description:
-        'LK Burton Limited, registered in England and Wales (company no. 13460176). Management of communal areas, maintenance and service charge administration for residents.',
+        'N.A Aesthetics Ltd, registered in England and Wales (company no. 13044738). Hairdressing and beauty treatments by appointment in Borehamwood, Hertfordshire.',
     },
     hero: {
-      eyebrow: 'Residents property management, Burton upon Trent',
-      titleLead: 'Communal property,',
-      titleMark: 'managed in the open',
+      eyebrow: 'Hairdressing and beauty, Borehamwood',
+      titleLead: 'Unhurried appointments,',
+      titleMark: 'and an honest opinion',
       lead:
-        'Most disputes between residents and a managing agent come down to money nobody could account for and work nobody could see. We would rather over-explain both than field the complaint later.',
-      secondaryCta: 'What we manage',
-      visualLabel: 'On the register since 2021',
+        'Good beauty work starts with someone telling you what will actually suit you, and what will not. Appointments here are booked with enough time to talk that through before anything begins.',
+      secondaryCta: 'What we offer',
+      visualLabel: 'On the register since 2020',
     },
     highlights: {
       eyebrow: 'How we work',
-      title: 'What residents are entitled to expect',
-      subtitle: 'Four things that keep a managed building running without resentment.',
+      title: 'What an appointment should feel like',
+      subtitle: 'Four things that decide whether you leave happy.',
       items: [
         {
-          icon: 'check-doc',
-          title: 'Money accounted for',
-          text: 'Service charge expenditure set out clearly enough that a resident can follow where their money went without having to ask twice.',
+          icon: 'chat',
+          title: 'A proper consultation',
+          text: 'We talk about what you want, what your hair or skin will realistically do, and what the upkeep involves, before anything starts.',
         },
         {
-          icon: 'wrench',
-          title: 'Repairs that get closed',
-          text: 'A reported problem is logged, chased and closed, with the resident told when it is done rather than left wondering.',
-        },
-        {
-          icon: 'users',
-          title: 'Communicated before, not after',
-          text: 'Work that affects access, parking or noise is notified in advance, because that is when the information is useful.',
+          icon: 'clock',
+          title: 'Time that is actually yours',
+          text: 'Appointments are spaced so yours is not rushed to make room for the next one.',
         },
         {
           icon: 'shield',
-          title: 'Your statutory rights',
-          text: 'Leaseholders have rights to information about service charges under the Landlord and Tenant Act 1985. We treat those as a floor, not a ceiling.',
+          title: 'Patch tests taken seriously',
+          text: 'Where a treatment needs a patch test beforehand, it is done, with the proper waiting time. No exceptions for convenience.',
+        },
+        {
+          icon: 'eye',
+          title: 'Told what we cannot do',
+          text: 'If a look will not work on your hair or skin, or needs more than one visit, you hear that before you commit, not afterwards.',
         },
       ],
     },
     services: {
       eyebrow: 'What we do',
-      title: 'Managing the shared parts',
-      subtitle: 'The communal areas, the money and the contractors who work on them.',
-      moreLabel: 'All services',
+      title: 'Treatments',
+      subtitle: 'Hairdressing and beauty treatment, by appointment.',
+      moreLabel: 'All treatments',
       cardCta: 'Read more',
     },
     process: {
-      eyebrow: 'The process',
-      title: 'How a managed building is run',
-      subtitle: 'Four parts to the year, rather than a series of emergencies.',
+      eyebrow: 'How it works',
+      title: 'From enquiry to appointment',
+      subtitle: 'Four steps, with the conversation at the front of them.',
       steps: [
         {
-          title: 'Understand the building',
-          text: 'The leases, the shared parts, the services in place and what residents say is actually wrong with it.',
+          title: 'Get in touch',
+          text: 'Tell us what you are after. A photograph of what you have in mind helps more than a description.',
         },
         {
-          title: 'Plan and budget',
-          text: 'A budget for the year that distinguishes routine costs from the larger items coming down the line.',
+          title: 'Consultation',
+          text: 'We talk through what suits you, how long it takes and what keeping it up involves. Any patch test is arranged at this point.',
         },
         {
-          title: 'Run it',
-          text: 'Repairs logged and chased, contractors instructed and checked, residents told what is happening before it happens.',
+          title: 'Your appointment',
+          text: 'Booked with enough time, and nothing added on the day that you have not agreed to.',
         },
         {
-          title: 'Account for it',
-          text: 'Expenditure reported against the budget, with the differences explained rather than left to be discovered.',
+          title: 'Afterwards',
+          text: 'Aftercare explained before you leave, and a straight answer if something is not sitting right once you are home.',
         },
       ],
     },
     record: {
       eyebrow: 'Company details',
-      title: 'Who is managing the building',
-      subtitle: 'A registered limited company, on the public record since 2021.',
+      title: 'Who you are booking with',
+      subtitle: 'Taken from the public register, so you can check it independently.',
     },
     faq: {
       eyebrow: 'Questions',
       title: 'Common questions',
-      subtitle: 'What leaseholders and residents most often want to know.',
+      subtitle: 'The things worth asking before a first appointment.',
       items: [
         {
-          q: 'Am I entitled to see how my service charge was spent?',
-          a: 'Yes. Under the Landlord and Tenant Act 1985 a leaseholder can ask for a written summary of the costs making up the service charge, and can then inspect the accounts and receipts behind it. You should not have to invoke a statute to get that, and we would rather provide the detail before anyone asks.',
+          q: 'Do I need a patch test?',
+          a: 'For anything involving colour or tint, yes, and it has to be done far enough in advance to be meaningful. We will not skip it to fit an appointment in sooner. If you have had a reaction to a product before, tell us at the consultation rather than on the day.',
         },
         {
-          q: 'Which redress scheme do you belong to?',
-          a: 'Ask us and we will give you the scheme name and our membership number in writing. A business carrying out property management work in England is required to belong to a government-approved redress scheme, which gives you somewhere independent to take a complaint if we have not resolved it ourselves. We do not state a membership on this page that you cannot check, so please ask for it directly.',
+          q: 'Will you tell me if something will not suit me?',
+          a: 'Yes, and it happens. A look that works on someone else may not work on your hair type, your natural colour or the condition it is in. You will get that opinion before you commit, along with what would get you closest to what you want.',
         },
         {
-          q: 'How do I report something that needs fixing?',
-          a: 'Get in touch with what it is and where. It gets logged, you get told who is dealing with it, and you get told when it is closed. The part that usually fails is the last one, so that is the part we watch.',
+          q: 'What qualifications do you hold?',
+          a: 'Ask us and we will tell you directly, with the certificates to look at. We do not list qualifications or insurance on this website, because anyone can type them and you have no way to check them from a web page. Asking the question in person gets you a far better answer.',
         },
         {
-          q: 'How are contractors chosen?',
-          a: 'On what the job actually needs, with larger work quoted competitively. Where the law requires consultation with leaseholders before major works, that consultation happens properly rather than as an afterthought.',
+          q: 'Do you offer injectable treatments?',
+          a: 'This website covers hairdressing and beauty treatment, which is the activity the company is registered for. It does not promote treatments that UK law restricts from being advertised to the public, and we would not list one here even to say we offer it. If you have a question about anything beyond what is listed on this page, please ask us directly.',
         },
         {
-          q: 'What if I am unhappy with how something was handled?',
-          a: 'Tell us first and give us a chance to put it right, in writing so there is a record. If you are still not satisfied, you can take it to the redress scheme, and depending on the issue leaseholders can also apply to the First-tier Tribunal on service charge matters. We will tell you about those routes rather than hoping you do not find them.',
+          q: 'How far in advance should I book?',
+          a: 'As early as you can for a specific date, and earlier still if a patch test is needed first. Get in touch with the date you have in mind and we will tell you honestly what is possible.',
+        },
+        {
+          q: 'How long has the company been registered?',
+          a: 'Since 26 November 2020. The company number, registered office and incorporation date are all on the public register, and the link below takes you straight to the record.',
         },
       ],
     },
     cta: {
       eyebrow: 'Next step',
-      title: 'Looking for a managing agent?',
-      lead: 'Tell us about the building and what is not working at the moment.',
+      title: 'Thinking about an appointment?',
+      lead: 'Tell us what you have in mind and we will tell you what is realistic and how long it takes.',
       secondaryCta: 'Company details',
     },
   },
 
   about: {
     seo: {
-      title: 'About LK Burton',
+      title: 'About N.A Aesthetics',
       description:
-        'A residents property management company registered in England and Wales since 2021, based in Burton upon Trent. Registered details as filed at Companies House.',
+        'A hairdressing and beauty business registered in England and Wales since 2020, based in Borehamwood. Registered details as filed at Companies House.',
     },
     hero: {
       eyebrow: 'About',
-      titleLead: 'Property management',
-      titleMark: 'is mostly bookkeeping and chasing',
+      titleLead: 'The honest answer',
+      titleMark: 'is worth more than the sale',
       lead:
-        'Not much of it is glamorous. Almost all of the goodwill in a building is won or lost on whether the money adds up and whether somebody followed up.',
+        'Most disappointment in this trade comes from someone being told yes when the answer was no, or not quite, or not in one visit.',
     },
     story: {
       title: 'How we work',
-      subtitle: 'Transparency is cheaper than a dispute.',
+      subtitle: 'The consultation is the part that decides everything else.',
       paragraphs: [
-        'Ask residents what they dislike about their managing agent and two answers come back: nobody could explain the service charge, and nothing ever got finished. Both are solvable with administration rather than talent, which is why we treat clear accounting and relentless follow-up as the core of the job rather than the overhead.',
-        'The legal framework helps. Leaseholders have statutory rights to information about service charges, and there are consultation requirements before major works. We would rather meet those as a minimum standard, voluntarily and early, than have residents discover they had to demand them.',
-        'The company has been registered since June 2021 and works in and around Burton upon Trent. Its number and registered office are below, and the link goes to the public record.',
+        'People usually arrive with a picture and a hope. The useful thing is not to agree with it immediately, but to say what your hair or skin will actually do, how many visits it would take, and what keeping it looking that way involves between appointments. That conversation takes ten minutes and prevents nearly every bad outcome.',
+        'The same applies to the things we decline. If a look needs a condition your hair is not in yet, saying so costs us an appointment and saves you a worse one. We would rather be the place that talked you out of something and got recommended for it.',
+        'Patch testing is not negotiable here, including when it is inconvenient and including when you have had the treatment elsewhere before. It is a small delay set against a reaction that is genuinely unpleasant.',
+        'The company has been on the register since November 2020. Its number and registered office are below, and the link takes you to the public record.',
       ],
     },
     values: {
       title: 'What we hold to',
       items: [
-        { icon: 'check-doc', title: 'Accountable money', text: 'Expenditure explained against the budget, before being asked.' },
-        { icon: 'wrench', title: 'Closed, not logged', text: 'A repair is finished when the resident has been told it is.' },
-        { icon: 'users', title: 'Told in advance', text: 'Notice of work that affects access, parking or noise.' },
-        { icon: 'shield', title: 'Rights respected', text: 'Statutory information and consultation treated as a floor.' },
+        { icon: 'chat', title: 'Consultation first', text: 'What will suit you, and what will not, before anything starts.' },
+        { icon: 'clock', title: 'Unhurried', text: 'Appointments spaced so yours is not cut short.' },
+        { icon: 'shield', title: 'Patch tests kept', text: 'Done properly, with the waiting time, every time.' },
+        { icon: 'eye', title: 'Realistic', text: 'Told how many visits and what upkeep it needs, up front.' },
       ],
     },
     record: {
@@ -167,53 +174,54 @@ export const overrides: Record<string, unknown> = {
     },
     cta: {
       eyebrow: 'Next step',
-      title: 'Want to talk about your building?',
-      lead: 'Whether you are a resident, a director of a management company or a freeholder.',
-      secondaryCta: 'What we manage',
+      title: 'Want to talk it through first?',
+      lead: 'A consultation costs you a conversation and usually changes the plan for the better.',
+      secondaryCta: 'What we offer',
     },
   },
 
   servicesPage: {
     seo: {
-      title: 'Communal area management and service charge administration',
+      title: 'Hairdressing, skin, brows and lashes',
       description:
-        'Residents property management from LK Burton Limited: communal areas, maintenance coordination, service charge administration and resident communication.',
+        'Hairdressing, skincare treatments, brows and lashes, and waxing from N.A Aesthetics Ltd, Borehamwood. By appointment, consultation first.',
     },
     hero: {
-      eyebrow: 'Services',
-      titleLead: 'The shared parts,',
-      titleMark: 'and the money behind them',
-      lead: 'Four pieces of work that between them keep a building running and its residents informed.',
+      eyebrow: 'Treatments',
+      titleLead: 'Four things we do,',
+      titleMark: 'all by appointment',
+      lead:
+        'Everything below sits within hairdressing and beauty treatment, which is the activity this company is registered for. If what you want is not here, ask and you will get a straight answer.',
     },
     quoteNote:
-      'Management is quoted against the specific building, its leases and the services it needs. Nothing on this page is a fixed price or a binding offer.',
+      'Everything is quoted at consultation, against your hair or skin and the time it will actually take. Nothing on this page is a fixed price or a binding offer.',
     cta: {
       eyebrow: 'Next step',
-      title: 'Tell us about the building',
-      lead: 'Number of units, what is currently in place and what is going wrong.',
+      title: 'Ready to book a consultation?',
+      lead: 'Tell us what you are after and we will arrange a time to talk it through.',
       secondaryCta: 'About the company',
     },
   },
 
   contact: {
     seo: {
-      title: 'Contact LK Burton, Burton upon Trent',
+      title: 'Contact N.A Aesthetics, Borehamwood',
       description:
-        'Get in touch about property management or report something at a managed building. Registered office: 84 Dover Road, Horninglow, Burton-On-Trent, DE13 0TB. Company no. 13460176.',
+        'Get in touch to arrange a consultation or an appointment. Registered office: Flat 13, Heaton House, Thurston Way, Borehamwood, WD6 1BF. Company no. 13044738.',
     },
     hero: {
       eyebrow: 'Contact',
-      titleLead: 'Reporting something,',
-      titleMark: 'or looking for an agent',
-      lead: 'Both start the same way: tell us the building and what is actually happening.',
+      titleLead: 'Tell us what you want,',
+      titleMark: 'and when you need it',
+      lead: 'A photograph of the look you have in mind tells us far more than a description does.',
     },
     helpful: {
       title: 'Useful to include',
       items: [
-        'The building and, if you are a resident, your unit or flat number.',
-        'What needs attention, and whether anyone else has already reported it.',
-        'Whether it affects safety, access or only one property.',
-        'If you are enquiring about management: the number of units and what is in place now.',
+        'What you are after, with a photograph if you have one.',
+        'What has been done to your hair or skin recently, including anything at home.',
+        'Whether you have ever reacted to a product, colour or tint.',
+        'The date you are working towards, and whether it is fixed.',
       ],
     },
     channelsTitle: 'How to reach us',
@@ -221,58 +229,58 @@ export const overrides: Record<string, unknown> = {
     cta: {
       eyebrow: 'Next step',
       title: 'Ready when you are',
-      lead: 'Send the details and we will come back to you.',
-      secondaryCta: 'What we manage',
+      lead: 'Send the details over and we will come back to you about a consultation.',
+      secondaryCta: 'What we offer',
     },
   },
 
   services: [
     {
-      id: 'communal-areas',
-      icon: 'building',
-      title: 'Communal area management',
-      summary: 'The shared parts of the building kept clean, lit, safe and in repair.',
+      id: 'hairdressing',
+      icon: 'scissors',
+      title: 'Hairdressing',
+      summary: 'Cutting, colour and finishing, planned around what your hair will actually do.',
       points: [
-        'Cleaning, lighting, grounds and shared facilities organised and checked.',
-        'Regular inspections, with findings written down rather than carried in someone’s head.',
-        'Fire safety and access arrangements kept under review.',
-        'Residents told in advance about work that affects them.',
+        'A consultation that covers condition, upkeep and how many visits it takes.',
+        'Colour work preceded by a patch test, with the proper waiting time.',
+        'An honest view when a look needs your hair in better condition first.',
+        'Aftercare explained before you leave, not guessed at later.',
       ],
     },
     {
-      id: 'maintenance',
-      icon: 'wrench',
-      title: 'Repairs and maintenance coordination',
-      summary: 'Reporting, instructing, chasing and closing. Mostly the chasing.',
+      id: 'skin',
+      icon: 'drop',
+      title: 'Skincare treatments',
+      summary: 'Facials and skin treatments, chosen for your skin rather than from a menu.',
       points: [
-        'A reported issue logged with a reference you can quote back at us.',
-        'Contractors instructed with a clear scope rather than a vague request.',
-        'Work checked before it is signed off and paid.',
-        'The resident told when it is finished, not left to assume.',
+        'A look at your skin and what it is doing before anything is recommended.',
+        'Products and steps explained as we go, so you know what is being used.',
+        'Realistic expectations about what one appointment changes.',
+        'A referral to your GP or a pharmacist where something is not ours to treat.',
       ],
     },
     {
-      id: 'service-charges',
-      icon: 'bars',
-      title: 'Service charge administration',
-      summary: 'Budgets, demands and accounts that a resident can actually follow.',
+      id: 'brows-lashes',
+      icon: 'eye',
+      title: 'Brows and lashes',
+      summary: 'Shaping, tinting and lash work, matched to your face rather than a trend.',
       points: [
-        'An annual budget separating routine costs from larger planned items.',
-        'Demands issued correctly and on time, with the detail behind them.',
-        'Expenditure reported against budget, with variances explained.',
-        'Statutory information provided to leaseholders who request it.',
+        'Shape discussed and agreed before anything is removed.',
+        'Patch test first for any tint, without exception.',
+        'An honest word on how quickly it will need doing again.',
+        'Removal and aftercare explained properly.',
       ],
     },
     {
-      id: 'resident-communication',
-      icon: 'users',
-      title: 'Resident communication',
-      summary: 'The part that turns a managed building into a tolerable one.',
+      id: 'waxing',
+      icon: 'leaf',
+      title: 'Waxing and finishing',
+      summary: 'Straightforward treatments, done carefully and without fuss.',
       points: [
-        'Notice before work starts, not an apology afterwards.',
-        'A named contact rather than an inbox nobody owns.',
-        'Consultation carried out properly where major works require it.',
-        'Complaints answered in writing, with the escalation route set out.',
+        'Hygiene standards kept the same whether or not anyone is watching.',
+        'Told beforehand what the appointment involves and how long it takes.',
+        'Aftercare advice that is practical rather than a product list.',
+        'A sensible interval suggested for the next one, not the soonest one.',
       ],
     },
   ],
